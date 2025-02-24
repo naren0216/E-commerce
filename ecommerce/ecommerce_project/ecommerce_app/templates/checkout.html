@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h1 class="my-4">Order Placed!</h1>
+        <p>Your order of <strong>${{ order.total_price }}</strong> has been placed successfully.</p>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+    </div>
+{% endblock %}
